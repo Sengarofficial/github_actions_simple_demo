@@ -6,10 +6,15 @@ import os
 
 load_dotenv()  # take environment variables from .env 
 
+
+# Building a flask app 
 app = Flask(__name__)
 
 @app.route("/<random_string")
 def backwards_string(random_string):
+
+
+    
 
     return "".join(reversed(random_string))
 
